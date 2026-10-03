@@ -1,0 +1,21 @@
+AH GLAM HOUSE — CLIENT DELIVERY
+
+1. Install Node.js 20 or newer.
+2. Open Terminal in this folder.
+3. Run: npm install
+4. Copy .env.example to .env
+5. Set a strong ADMIN_PASSWORD and JWT_SECRET.
+6. Run: npm start
+7. Website: http://localhost:3000
+8. Admin: http://localhost:3000/admin
+
+BOOKING FLOW
+Customer -> website booking form -> booking saved in SQLite -> live admin dashboard notification -> salon can call/WhatsApp customer -> admin confirms/completes/cancels booking.
+
+IMPORTANT NOTIFICATIONS
+The dashboard notification works from the backend immediately. Automatic WhatsApp or email notifications require the salon's own Twilio or SMTP credentials. These are intentionally not included because they are private account credentials.
+
+CALLS
+The Call buttons use tel:+919686450426, so on a phone the customer can tap and call the salon directly.
+
+Before going live, change the admin password and JWT secret and deploy on a Node server with persistent disk/storage for SQLite.
